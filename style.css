@@ -1,0 +1,95 @@
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.1s;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(https://pbs.twimg.com/media/FnU_0iKWAAA16zr?format=jpg&name=large);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 300px;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-align: center;
+    padding: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(240, 60, 30), rgb(25, 50, 200)) 0 0 100% 0;
+    margin-bottom: 40px;
+}
+
+.block {
+    display: block;
+}
+
+#email, #password, #submit {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    padding: 5px 10px;
+    width: 250px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+input:focus::placeholder {
+    font-weight: bold;
+}
+
+.fa-at, .fa-lock {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -7px;
+}
+
+.label {
+    width: 300px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(240, 60, 30), rgb(25, 50, 200)) 0 0 100% 0;
+    margin-bottom: 20px;
+}
+
+.submit {
+    text-align: center;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(240, 60, 30), rgb(25, 50, 200)) 1;
+    margin-top: 50px;
+}
